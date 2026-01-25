@@ -6,7 +6,7 @@ ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
 export default function BarChart () {
   const [chartData, setChartData] = useState({
     labels: [ 'January', 'February', 'March' ],
-    datasets: [ { data: [40, 20, 12] } ]
+    datasets: [ { label: 'My Bar Chart', data: [40, 20, 12] } ]
   });
   const [chartOptions, setChartOptions] = useState({
     responsive: true,
