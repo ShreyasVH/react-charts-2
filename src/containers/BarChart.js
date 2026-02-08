@@ -14,15 +14,15 @@ export default function BarChart () {
   });
 
   return (
-    <>
-    <Bar
-      options={chartOptions}
-      data={chartData}
-      chart-id="chartId"
-      dataset-id-key="datasetIdKey"
-      width={400}
-      height={400}
-    />
-    </>
+      <div style={{ height: 400, width: 400 }}>
+          <Bar
+            options={chartOptions}
+            data={chartData}
+            chart-id="barChart"
+            dataset-id-key="barChartIdKey"
+            width={400}
+            height={400}
+          />
+      </div>
   );
 }
